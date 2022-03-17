@@ -16,7 +16,8 @@ export const handler = async (
   event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   
-  // do something with firebase admin...
+  // do something with firebase database...
+  const db = firebaseAdmin.database();
   
   return {
     statusCode: 200,
